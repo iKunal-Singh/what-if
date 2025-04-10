@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Color palette based on reference image */
+  --color-primary: #e84118; /* Orange/red for MUSIC text */
+  --color-background: #e8e6e1; /* Beige/neutral background */
+  --color-text: #1a1a1a; /* Dark text */
+  --color-text-light: #ffffff; /* Light text */
+  --color-accent: #333333; /* Dark accent */
+}
+
+@layer base {
+  body {
+    @apply bg-[var(--color-background)] text-[var(--color-text)];
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .music-logo {
+    @apply text-[var(--color-primary)] font-black tracking-tighter;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .genre-nav {
+    @apply flex justify-center space-x-6 py-4 text-sm font-medium uppercase tracking-wider;
+  }
+
+  .genre-nav-item {
+    @apply hover:text-[var(--color-primary)] transition-colors duration-300;
+  }
+
+  .genre-card {
+    @apply bg-white/10 backdrop-blur-sm rounded-lg overflow-hidden cursor-pointer transition-all duration-300;
+    @apply hover:scale-110 hover:shadow-lg hover:shadow-[var(--color-primary)]/20;
+  }
+
+  .hero-section {
+    @apply relative min-h-[80vh] flex items-center justify-center overflow-hidden;
+  }
+
+  .parallax-bg {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+
+  .download-btn {
+    @apply bg-[var(--color-primary)] text-white px-4 py-2 rounded-full 
+           hover:bg-[var(--color-primary)]/90 transition-all duration-300
+           hover:shadow-md hover:shadow-[var(--color-primary)]/30;
+  }
+}
+
+/* Animation classes */
+.floating {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}

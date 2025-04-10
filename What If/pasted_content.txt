@@ -1,0 +1,65 @@
+Objective:
+Build a responsive, ad-driven website for my YouTube music channel that hosts free downloads of original beats, cover art, and remixes while maximizing ad revenue. Prioritize user engagement, SEO, and seamless integration with YouTube content. 
+Core Requirements:
+
+    Design & UX:
+
+        Modern, music-themed template (dark mode preferred) with animated hover effects.
+
+        Dedicated sections:
+
+            Beats (genre filters, BPM/key tags, preview players).
+
+            Remixes (embedded YouTube videos + download links).
+
+            Cover Art Gallery (high-res grid with artist credits).
+
+        Mobile-first, AMP-compatible, and GDPR-compliant cookie consent.
+
+    Download System:
+
+        Free downloads unlocked after ad-view or email signup (use AdSense or AdThrive).
+
+        Download gate with:
+
+            “Support My Work: Watch a Quick Ad or Subscribe!” (A/B test ad vs. email opt-in).
+
+        Automated DMCA/copyright disclaimer generator for remixes (e.g., “Vocals used under Fair Use—non-profit only”).
+
+    Ad Monetization:
+
+        Header/footer banners (Google AdSense).
+
+        In-content ads after every 3 downloads.
+
+        Pop-up ads for exit intent (tools like OptinMonster).
+
+    SEO & Automation:
+
+        Auto-generate SEO titles/descriptions using AI (e.g., “Drake-Type Beat 2024 | Free Download Hip-Hop Instrumental”).
+
+        Auto-post new beats to YouTube + website via Zapier/API.
+
+        Schema markup for beats (genre, BPM, key) to rank on Google’s “free beat download” searches.
+
+   Example Workflow for AI Agents:
+
+    Content Automation:
+
+        When a YouTube video titled “Travis Scott Type Beat - ‘Utopia’ Vibes” is uploaded, auto-generate:
+
+            A website post with embedded video, download link, and AI-generated tags (e.g., #DarkTrap, #FreeBeats).
+
+        Ad Optimization:
+
+        Use AI to analyze user behavior (e.g., EU visitors get GDPR-friendly ads; mobile users see rewarded video ads).
+
+    SEO Automation:
+
+        AI-generated blog posts like “How to Rap on Type Beats: Top 5 Free Downloads” to drive organic traffic.
+
+Post-Launch AI Tasks:
+
+    A/B Test: Let AI optimize ad placement/CTAs.
+
+    Content Refresh: Auto-remix old beats into new “AI Producer Packs” for download incentives.

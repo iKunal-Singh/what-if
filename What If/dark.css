@@ -1,0 +1,165 @@
+/* Dark Theme Specific Styles */
+body.dark-theme {
+  --text-color: #e0e0e0;
+  --background-dark: #121212;
+  --background-card: #1e1e1e;
+  --background-section: #181818;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Theme Overrides */
+.dark-theme .navbar {
+  background-color: rgba(18, 18, 18, 0.95);
+}
+
+.dark-theme .card {
+  background-color: var(--background-card);
+  border-color: var(--border-color);
+}
+
+.dark-theme .modal-content {
+  background-color: var(--background-card);
+  color: var(--text-color);
+}
+
+.dark-theme .form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--border-color);
+  color: white;
+}
+
+.dark-theme .form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+/* Dark Theme Audio Player */
+.dark-theme audio::-webkit-media-controls-panel {
+  background-color: var(--background-card);
+}
+
+.dark-theme audio::-webkit-media-controls-current-time-display,
+.dark-theme audio::-webkit-media-controls-time-remaining-display {
+  color: var(--text-color);
+}
+
+/* Dark Theme Glow Effects */
+.dark-theme .beat-card:hover,
+.dark-theme .remix-card:hover,
+.dark-theme .cover-art-card:hover {
+  box-shadow: 0 10px 25px rgba(140, 82, 255, 0.3);
+}
+
+.dark-theme .btn-primary {
+  box-shadow: 0 4px 15px rgba(140, 82, 255, 0.3);
+}
+
+.dark-theme .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(140, 82, 255, 0.5);
+}
+
+.dark-theme .btn-success {
+  box-shadow: 0 4px 15px rgba(0, 200, 83, 0.3);
+}
+
+.dark-theme .btn-success:hover {
+  box-shadow: 0 6px 20px rgba(0, 200, 83, 0.5);
+}
+
+/* Dark Theme Section Backgrounds */
+.dark-theme section:nth-child(odd) {
+  background-color: var(--background-dark);
+}
+
+.dark-theme section:nth-child(even) {
+  background-color: var(--background-section);
+}
+
+/* Dark Theme Footer */
+.dark-theme footer {
+  background-color: #0a0a0a;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Dark Theme Scrollbar */
+.dark-theme::-webkit-scrollbar {
+  width: 10px;
+}
+
+.dark-theme::-webkit-scrollbar-track {
+  background: var(--background-dark);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+.dark-theme::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* Dark Theme Dropdown Menus */
+.dark-theme .dropdown-menu {
+  background-color: var(--background-card);
+  border-color: var(--border-color);
+}
+
+.dark-theme .dropdown-item {
+  color: var(--text-color);
+}
+
+.dark-theme .dropdown-item:hover {
+  background-color: rgba(140, 82, 255, 0.1);
+  color: var(--primary-color);
+}
+
+/* Dark Theme Badges */
+.dark-theme .badge {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark Theme Alerts */
+.dark-theme .alert {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Dark Theme Tooltips */
+.dark-theme .tooltip .tooltip-inner {
+  background-color: var(--background-card);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Dark Theme Neon Text Effect */
+.dark-theme .navbar-brand,
+.dark-theme .hero-section h1 {
+  text-shadow: 0 0 5px rgba(140, 82, 255, 0.5), 0 0 10px rgba(140, 82, 255, 0.3);
+}
+
+/* Dark Theme Card Hover Animation */
+.dark-theme .card {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark-theme .card:hover {
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Dark Theme Button Pulse Animation */
+@keyframes darkPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(140, 82, 255, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(140, 82, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(140, 82, 255, 0);
+  }
+}
+
+.dark-theme .download-btn:hover {
+  animation: darkPulse 1.5s infinite;
+}

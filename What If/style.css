@@ -1,0 +1,319 @@
+/* Main Styles */
+:root {
+  --primary-color: #8c52ff;
+  --secondary-color: #5e17eb;
+  --accent-color: #00d9ff;
+  --text-color: #e0e0e0;
+  --background-dark: #121212;
+  --background-card: #1e1e1e;
+  --background-section: #181818;
+  --success-color: #00c853;
+  --warning-color: #ffab00;
+  --danger-color: #ff3d00;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-dark);
+  transition: all 0.3s ease;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.display-4 {
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: rgba(18, 18, 18, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-weight: 800;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--text-color);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, rgba(94, 23, 235, 0.8), rgba(0, 217, 255, 0.8)), 
+              url('../images/hero-bg.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 8rem 0;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-section .btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  box-shadow: 0 4px 15px rgba(140, 82, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(140, 82, 255, 0.6);
+}
+
+/* Sections */
+section {
+  padding: 5rem 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+  display: inline-block;
+}
+
+section h2:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+section.bg-dark {
+  background-color: var(--background-section) !important;
+}
+
+/* Cards */
+.card {
+  background-color: var(--background-card);
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card-title {
+  font-weight: 700;
+  color: white;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Beat Cards */
+.beat-card .badge {
+  margin-right: 0.5rem;
+  font-weight: 500;
+}
+
+.audio-player {
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.audio-player audio {
+  width: 100%;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Remix Cards */
+.remix-card iframe {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+}
+
+.disclaimer {
+  background-color: rgba(255, 171, 0, 0.1);
+  border-color: rgba(255, 171, 0, 0.2);
+  color: var(--warning-color);
+}
+
+/* Cover Art Cards */
+.cover-art-card img {
+  transition: all 0.3s ease;
+}
+
+.cover-art-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 30px;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
+.btn-success {
+  background-color: var(--success-color);
+  border-color: var(--success-color);
+}
+
+.download-btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+/* Filters */
+.filters {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filters .btn {
+  margin: 0.25rem;
+  border-radius: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--background-card);
+  color: var(--text-color);
+  padding: 2rem 0;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+/* Modal */
+.modal-content {
+  background-color: var(--background-card);
+  color: var(--text-color);
+  border-radius: 15px;
+}
+
+.modal-header {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-footer {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Form Controls */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.1);
+  color: white;
+  border-radius: 30px;
+  padding: 0.75rem 1.25rem;
+}
+
+.form-control:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(140, 82, 255, 0.25);
+}
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(140, 82, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(140, 82, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(140, 82, 255, 0);
+  }
+}
+
+.download-btn:hover {
+  animation: pulse 1.5s infinite;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 5rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  section h2 {
+    font-size: 2rem;
+  }
+  
+  .filters {
+    flex-direction: column;
+  }
+  
+  .filters .btn {
+    margin: 0.25rem 0;
+  }
+}
+
+/* AMP Compatibility */
+.i-amphtml-layout {
+  display: block;
+  position: relative;
+}
+
+/* GDPR Cookie Consent Customization */
+.cc-window {
+  background-color: var(--background-card) !important;
+  color: var(--text-color) !important;
+}
+
+.cc-btn {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
